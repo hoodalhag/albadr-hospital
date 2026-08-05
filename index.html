@@ -1,103 +1,51 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>Albadr hospital</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; padding: 20px; }
-        .container { max-width: 900px; margin: auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
-        h1 { color: #0056b3; border-bottom: 5px solid #0056b3; padding-bottom: 15px; text-align: center; }
-        h2 { color: #0056b3; margin-top: 30px; border-right: 5px solid #0056b3; padding-right: 10px; }
-        ul { padding-right: 25px; }
-        li { margin-bottom: 10px; }
-        .contact-info { background: #e7f3ff; padding: 20px; border-radius: 8px; border: 1px solid #b3d7ff; }
-        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #000; }
-        img, video, iframe { max-width: 100%; height: auto; border-radius: 8px; border: 2px solid #ddd; }
-        .media-container { margin-bottom: 20px; }
-        .link-box { background: #f9f9f9; padding: 10px; border: 1px dashed #0056b3; border-radius: 5px; word-break: break-all; margin-top: 10px; }
-    </style>
+    <title>(Form) HTML </title>
 </head>
 <body>
+    <form>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name"><br><br>
 
-<div class="container">
-    <h1>مستشفى البدر الدولي</h1>
 
-    <div class="media-container">
-        <h2>صورة المستشفى</h2>
-        <img src="image.jpg"alt="مستشفى البدر الدولي" width="100%">
-    </div>
+        <label for="pass">pass:</label>
+        <input type="password" id="pass" name="pass" value="***"><br><br>
 
-    <h2>مقدمة</h2>
-    <p>يُعد مستشفى البدر الدولي أحد أبرز المستشفيات الخاصة في محافظة إب بالجمهورية اليمنية، ويقدم خدمات طبية وتشخيصية وعلاجية متكاملة على مدار الساعة. ويهدف المستشفى إلى توفير رعاية صحية عالية الجودة من خلال الاعتماد على الكوادر الطبية المؤهلة، والأجهزة الطبية الحديثة، والتقنيات المتطورة في التشخيص والعلاج.</p>
-    
-    <h2>فيديو تعريفي عن المستشفى</h2>
-    <div class="media-container">
-        <video width="100%" height="400px" controls>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-    </div>
+        <label for="level">level:</label>
+        <select id="level" name="level">
+            <option value="Beginner">Beginner</option>
+            <option value="intermadiate">intermadiate</option>
+            <option value="advanced">advanced</option>
+            <option value="expert">expert</option>
+        </select><br><br>
 
-    <h2>رابط الفيديو الثاني (يوتيوب)</h2>
-    <div class="link-box">
-        <a href="https://youtu.be/TM6vgOHDs7s?feature=shared" target="_blank">https://youtu.be/TM6vgOHDs7s?feature=shared</a>
-    </div>
 
-    <h2>الموقع</h2>
-    <p>يقع مستشفى البدر الدولي في الجمهورية اليمنية – محافظة إب، الدائري الغربي، بجوار فندق الفخامة، بالقرب من جولة العدين.</p>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label>
+        
+        <input type="radio" id="femal" name="gender" value="femal">
+        <label for="femal">Femal</label><br><br>
 
-    <h2>خريطة الموقع</h2>
-    <div class="media-container">
-        <iframe src="https://maps.google.com/maps?q=مستشفى+البدر+الدولي+إب&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" title="خريطة الموقع"></iframe>
-        <div class="link-box">
-            <strong>رابط الموقع الجغرافي:</strong> <a href="https://maps.google.com/?q=مستشفى+البدر+الدولي+إب" target="_blank">https://maps.google.com/?q=X596+C55+إب+اليمن</a>
-        </div>
-    </div>
 
-    <h2>الرؤية والرسالة</h2>
-    <p><strong>الرؤية:</strong> يسعى المستشفى إلى أن يكون من المؤسسات الطبية الرائدة في اليمن من خلال تقديم خدمات صحية متكاملة وفق معايير الجودة، مع توفير بيئة علاجية آمنة ومريحة للمرضى.</p>
-    <p><strong>الرسالة:</strong> تقديم خدمات طبية وتشخيصية وعلاجية متميزة باستخدام أحدث التقنيات الطبية، وبإشراف نخبة من الأطباء والاستشاريين، مع التركيز على سلامة المرضى وجودة الرعاية الصحية.</p>
+        <label>Hopes:</label><br>
+        <input type="checkbox" id="swim" name="hopes" value="swim">
+        <label for="swim">السباحة</label><br>
+        
+        <input type="checkbox" id="shoot" name="hopes" value="shoot">
+        <label for="shoot">الرماية</label><br>
+        
+        <input type="checkbox" id="read" name="hopes" value="read">
+        <label for="read">القراءة</label><br><br>
 
-    <h2>أهداف المستشفى</h2>
-    <ul>
-        <li>تقديم خدمات صحية متكاملة لجميع فئات المجتمع.</li>
-        <li>توفير أحدث الأجهزة الطبية والتقنيات التشخيصية.</li>
-        <li>استقطاب الكفاءات الطبية في مختلف التخصصات.</li>
-        <li>تقديم خدمات الطوارئ والرعاية الحرجة على مدار 24 ساعة.</li>
-        <li>تطوير الخدمات الطبية بشكل مستمر بما يواكب التطورات الحديثة.</li>
-    </ul>
 
-    <h2>الأقسام والخدمات الطبية</h2>
-    <ul>
-        <li>قسم الطوارئ والإسعاف.</li>
-        <li>العناية المركزة.</li>
-        <li>غرف العمليات الحديثة.</li>
-        <li>مركز الأشعة التشخيصية (MRI, CT Scan).</li>
-        <li>المختبرات الطبية المركزية.</li>
-        <li>قسم النساء والولادة، وقسم الأطفال وحديثي الولادة والحاضنات.</li>
-        <li>عيادات الباطنية، الأعصاب، جراحة الأوعية الدموية، جراحة الصدر، وطب وجراحة الأسنان.</li>
-    </ul>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br><br>
 
-    <h2>التجهيزات الطبية والأنشطة العلمية</h2>
-    <p>يتميز المستشفى بتجهيزات حديثة تشمل مركزاً تشخيصياً متكاملاً، غرف عمليات متطورة، شبكة تعقيم مركزية، ومحطة خاصة لإنتاج الأكسجين الطبي. كما يحرص المستشفى على الأنشطة العلمية، حيث شارك في تنظيم المؤتمر العلمي الثاني لأمراض الباطنة بمحافظة إب.</p>
-
-    <h2>معلومات التواصل</h2>
-    <div class="contact-info">
-        <p><strong>العنوان:</strong> محافظة إب – الدائري الغربي – بجوار فندق الفخامة.</p>
-        <p><strong>الهاتف الأرضي:</strong> 04-534444</p>
-        <p><strong>هاتف الحجز والاستفسار:</strong> 779779900</p>
-        <p><strong>الرقم المجاني:</strong> 8000104</p>
-        <p><strong>ساعات العمل:</strong> يعمل المستشفى وخدمات الطوارئ على مدار 24 ساعة طوال أيام الأسبوع.</p>
-    </div>
-
-    <h2>للمزيد</h2>
-    <div class="media-container" style="text-align: center;">
-        <a href="badr.pdf" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 5px;">اضغط هنا لعرض المزيد عن المستشفى</a>
-    </div>
-
-    <div class="footer">
-       <p><strong>عمل الطالـــب: هــــــود يحــيى الحــاج</strong></p>
-    </div>
-</div>
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 </html>

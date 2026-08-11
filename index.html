@@ -1,0 +1,147 @@
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>جدول درجات الطلاب</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            text-align: center;
+            color:black;
+            
+        }
+
+        table {
+            width: 85%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px black;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        .score {
+            color: #013369;
+            font-weight: 600;
+        }
+        .student-name {
+            color: #2c3e50;
+            font-weight: bold;
+            text-align: right;
+            background-color: #f1f4f8;
+        }
+        .student-class {
+            color: #546e7a;
+            background-color: #f1f4f8;
+        }
+        .semester-header {
+            background-color: #fff3e0;
+            color: #d84315;
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+        .math-col {
+            color: #6a1b9a;
+        }
+        th.math-col {
+            background-color: #f3e5f5;
+        }
+        .science-col {
+            color: #00838f;
+        }
+        th.science-col {
+            background-color: #e0f2f1;
+        }
+        .total-col {
+            color: #c2185b;
+            font-weight: bold;
+            background-color: #fce4ec;
+        }
+        .main-title {
+            background-color: #37474f;
+            color: #ffffff;
+            font-size: 1.1em;
+        }
+        tr:hover {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <h2>جدول درجات الطلاب</h2>
+
+    <table>
+        <tr>
+            <th colspan="7" class="main-title">درجات الفصل الدراسي</th>
+        </tr>
+        <tr>
+            <th rowspan="2" class="student-name">اسم الطالب</th>
+            <th rowspan="2" class="student-class">الصف</th>
+            <th colspan="2" class="semester-header">الفصل الأول</th>
+            <th colspan="2" class="semester-header">الفصل الثاني</th>
+            <th rowspan="2" class="total-col">المجموع</th>
+        </tr>
+        <tr>
+            <th class="math-col">رياضيات</th>
+            <th class="science-col">علوم</th>
+            <th class="math-col">رياضيات</th>
+            <th class="science-col">علوم</th>
+        </tr>
+        <tr>
+            <td class="student-name">أحمد</td>
+            <td class="student-class">الثالث</td>
+            <td class="score math-col">90</td>
+            <td class="score science-col">85</td>
+            <td class="score math-col">88</td>
+            <td class="score science-col">91</td>
+            <td class="total-col">354</td>
+        </tr>
+        <tr>
+            <td class="student-name">محمد</td>
+            <td class="student-class">الثالث</td>
+            <td class="score math-col">80</td>
+            <td class="score science-col">79</td>
+            <td class="score math-col">85</td>
+            <td class="score science-col">87</td>
+            <td class="total-col">331</td>
+        </tr>
+        <tr>
+            <td class="student-name">علي</td>
+            <td class="student-class">الثالث</td>
+            <td class="score math-col">95</td>
+            <td class="score science-col">92</td>
+            <td class="score math-col">94</td>
+            <td class="score science-col">96</td>
+            <td class="total-col">377</td>
+        </tr>
+        <tr>
+            <td class="student-name">سارة</td>
+            <td class="student-class">الثالث</td>
+            <td class="score math-col">88</td>
+            <td class="score science-col">90</td>
+            <td class="score math-col">91</td>
+            <td class="score science-col">89</td>
+            <td class="total-col">358</td>
+        </tr>
+        <tr>
+            <td class="student-name">ريم</td>
+            <td class="student-class">الثالث</td>
+            <td class="score math-col">93</td>
+            <td class="score science-col">94</td>
+            <td class="score math-col">95</td>
+            <td class="score science-col">97</td>
+            <td class="total-col">379</td>
+        </tr>
+    </table>
+
+</body>
+</html>
